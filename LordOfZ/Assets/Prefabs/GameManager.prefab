@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6517969964769223138
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6517969964769223141}
+  - component: {fileID: 6517969964769223140}
+  - component: {fileID: 6517969964769223143}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6517969964769223141
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6517969964769223138}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6517969964769223140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6517969964769223138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ead2221491dc14499c43d1994cbfa5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelGestions:
+  - levelNumber: 1
+    camPoint: {fileID: 0}
+    money: 100
+    startMoving: 0
+    orthographicSize: 4
+    humansToKill:
+    - {fileID: 0}
+  - levelNumber: 2
+    camPoint: {fileID: 0}
+    money: 100
+    startMoving: 0
+    orthographicSize: 0
+    humansToKill:
+    - {fileID: 0}
+    - {fileID: 0}
+  - levelNumber: 3
+    camPoint: {fileID: 0}
+    money: 200
+    startMoving: 0
+    orthographicSize: 0
+    humansToKill:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  - levelNumber: 4
+    camPoint: {fileID: 0}
+    money: 200
+    startMoving: 0
+    orthographicSize: 0
+    humansToKill:
+    - {fileID: 0}
+  playerZombies: []
+  canPlay: 0
+  playerMoney: 100
+  cam: {fileID: 0}
+  currentLevelGestion:
+    levelNumber: 3
+    camPoint: {fileID: 0}
+    money: 0
+    startMoving: 0
+    orthographicSize: 0
+    humansToKill: []
+  currentLevelNumber: 3
+  camParent: {fileID: 0}
+  moneyText: {fileID: 0}
+  victoryScreen: {fileID: 0}
+  retryScreen: {fileID: 0}
+--- !u!114 &6517969964769223143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6517969964769223138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b25b0dc52fc37041b0608d359c60cb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ground:
+    serializedVersion: 2
+    m_Bits: 64
+  zombiesList:
+  - zombieEnum: 0
+    cost: 100
+    zombiePref: {fileID: 2321705887340688028, guid: da76904e5230841418ac189305c726a8, type: 3}
+  - zombieEnum: 1
+    cost: 200
+    zombiePref: {fileID: 5433280057365387276, guid: 11c4ea5bb1618544cbed92f504362e11, type: 3}
+  - zombieEnum: 2
+    cost: 500
+    zombiePref: {fileID: 2321705887340688028, guid: 6694576633858c847bf89be1c753bb36, type: 3}
+  explosionPref: {fileID: 100006, guid: 2a474af3f4c27be4e9bdce39cfe4315d, type: 3}

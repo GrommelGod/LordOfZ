@@ -1,0 +1,4 @@
+##### Ez Screenshot Instructions #####
+- To open the Ez Screenshot window go to Window/Ez Screenshot/Open.
+- Check out a complete guide at https://solomidgames.com/guides/ez-screenshot/quick-overview.html
+- Or check out our video guide at https://www.youtube.com/watch?v=92279bX8ad4
